@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>よしお占い</title>
+  <style>
+    body {
+      background-color: #fff9f0;
+      color: #333;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+    h1 {
+      font-size: 2.5em;
+    }
+    #result {
+      margin-top: 30px;
+      font-size: 3em;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎌 よしお占い 🎌</h1>
+  <p id="result">運勢を読み込み中…</p>
+  <script>
+    const results = [
+      '🌟 大吉 🌟\n今日は最高の日やで！',
+      '😊 中吉 😊\nまあまあ良いことあるかもな！',
+      '😅 小吉 😅\n慎重に行こうか〜'
+    ];
+    document.getElementById("result").innerText = results[Math.floor(Math.random() * results.length)];
+  </script>
+</body>
+</html>
